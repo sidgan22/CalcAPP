@@ -12,6 +12,7 @@
         android:id="@+id/x"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
+        android:maxLength="10"
         android:layout_marginLeft="20dp"
         android:hint="Enter 1st operand "
         android:layout_width="wrap_content"
@@ -19,6 +20,7 @@
 
     <EditText
         android:id="@+id/y"
+        android:maxLength="10"
         android:layout_marginLeft="20dp"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
