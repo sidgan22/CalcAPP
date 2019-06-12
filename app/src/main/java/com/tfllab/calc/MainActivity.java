@@ -1,5 +1,6 @@
 package com.tfllab.calc;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -59,7 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 else if (r4.isChecked())
                     sol=op1/op2;
                 sol = Float.parseFloat(String.format("%.4f",sol));
-                t1.setText(""+sol);
+
+                Intent intent = new Intent(MainActivity.this,Display.class);
+                intent.putExtra("data","Answer: "+sol);
+                startActivity(intent);
+                // t1.setText(""+sol);
                 }
         });
 
